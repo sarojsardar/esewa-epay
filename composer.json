@@ -1,14 +1,26 @@
 {
     "name": "sarojsardar/esewa-epay",
-    "description": "Laravel package for eSewa v2 payment integration.",
+    "description": "eSewa Payment Integration Package for Laravel",
     "type": "library",
     "require": {
-        "php": "^8.1|^8.2|^8.3",
+        "php": "^8.1",
         "laravel/framework": "^11.0"
     },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Saroj Sardar",
+            "email": "sarojsardar25@gmail.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Sarojsardar\\EsewaEpay\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
     },
     "minimum-stability": "dev",
