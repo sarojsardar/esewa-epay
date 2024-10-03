@@ -8,17 +8,15 @@ class EsewaEpayServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        // Load configuration
+        // Publishing configuration file
         $this->publishes([
             __DIR__.'/config/esewa.php' => config_path('esewa.php'),
-        ]);
-
-        // Load routes, views, etc., if needed
-        // $this->loadViewsFrom(__DIR__.'/views', 'esewa');
+        ], 'config'); // Tag for configuration
     }
 
     public function register()
     {
+        // Register the service
         $this->app->singleton(EpayService::class, function ($app) {
             return new EpayService();
         });
