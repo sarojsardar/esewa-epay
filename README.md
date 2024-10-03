@@ -38,7 +38,7 @@ This package provides a simple and effective way to integrate eSewa payment proc
    Run the following command in your Laravel project directory:
 
    ```bash
-   composer require sarojsardar/esewa-epay:dev-master
+   composer require sarojsardar/esewa-epay:dev-main
 Publish the configuration file:
 
 After installation, publish the package configuration file using the following command:
