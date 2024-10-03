@@ -45,7 +45,9 @@ After installation, publish the package configuration file using the following c
 
 bash
 Copy code
-php artisan vendor:publish --provider="Sarojsardar\EsewaEpay\EsewaEpayServiceProvider"
+
+- php artisan vendor:publish --provider="Sarojsardar\EsewaEpay\EsewaEpayServiceProvider"
+
 This command will create a configuration file at config/esewa.php.
 
 Configuration
